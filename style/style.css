@@ -1,0 +1,196 @@
+/* poppins-regular - latin */
+@font-face {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	src: url("./fonts/poppins-v20-latin-regular.eot"); /* IE9 Compat Modes */
+	src: local(""),
+		url("./fonts/poppins-v20-latin-regular.eot?#iefix")
+			format("embedded-opentype"),
+		/* IE6-IE8 */ url("./fonts/poppins-v20-latin-regular.woff2") format("woff2"),
+		/* Super Modern Browsers */ url("./fonts/poppins-v20-latin-regular.woff")
+			format("woff"),
+		/* Modern Browsers */ url("./fonts/poppins-v20-latin-regular.ttf")
+			format("truetype"),
+		/* Safari, Android, iOS */
+			url("./fonts/poppins-v20-latin-regular.svg#Poppins") format("svg"); /* Legacy iOS */
+}
+/* poppins-700 - latin */
+@font-face {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	src: url("./fonts/poppins-v20-latin-700.eot"); /* IE9 Compat Modes */
+	src: local(""),
+		url("./fonts/poppins-v20-latin-700.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */ url("./fonts/poppins-v20-latin-700.woff2") format("woff2"),
+		/* Super Modern Browsers */ url("./fonts/poppins-v20-latin-700.woff")
+			format("woff"),
+		/* Modern Browsers */ url("./fonts/poppins-v20-latin-700.ttf")
+			format("truetype"),
+		/* Safari, Android, iOS */ url("./fonts/poppins-v20-latin-700.svg#Poppins")
+			format("svg"); /* Legacy iOS */
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	color: #ffffff;
+}
+
+.bubbles {
+	background: url(./img/Group\ 21.1.png), no-repeat;
+	max-width: 1500px;
+	max-height: 1500px;
+	height: 1500px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.bubbles-bgr1 {
+	background: url(./img/Graphics-2.png) no-repeat;
+	max-width: calc(155 / 1500 * 100%);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: calc(428 / 1500 * 100%);
+	left: calc(162 / 1500 * 100%);
+}
+
+.bubbles-bgr2 {
+	background: url(./img/Graphics-1.png) no-repeat;
+	max-width: calc(92 / 1500 * 100%);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: calc(1139 / 1500 * 100%);
+	right: calc(125 / 1500 * 100%);
+}
+
+.bubbles__title {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 42px;
+	text-align: center;
+	text-transform: uppercase;
+	max-width: calc(400 / 542 * 100%);
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: calc(28 / 542 * 100%);
+}
+
+.bubbles__title-wrap {
+	max-width: calc(542 / 1500 * 100%);
+	width: 100%;
+	padding-top: calc(504 / 1500 * 100%);
+	margin: 0 auto;
+}
+
+.bubbles__underlineline-wrap {
+	text-align: center;
+	padding-bottom: 45px;
+}
+
+.bubbles__content {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 40px;
+	text-align: center;
+}
+
+span {
+	display: block;
+}
+
+.bubbles__costumers-wrap {
+	margin: 0 auto;
+	margin-top: 25px;
+	background: url(./img/Happy\ Customers.png) no-repeat;
+	max-width: calc(1067 / 1500 * 100%);
+	max-height: calc(389 / 1500 * 100%);
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.bubbles__costumers-content {
+	max-width: calc(410 / 1067 * 100%);
+	max-height: calc(117 / 389 * 100%);
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	position: absolute;
+	left: calc(557 / 1067 * 100%);
+	bottom: calc(60 / 389 * 100%);
+	padding-left: 49px;
+	padding-top: 18px;
+	background: url(./img/Holder-Container.png);
+}
+
+.bubbles__costumers-content * {
+	color: #333333;
+	padding-bottom: 6px;
+}
+
+.bubbles__costumers-content p:first-child {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 18px;
+	line-height: 24px;
+	height: 24px;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.bubbles__costumers-content img:first-child {
+	display: block;
+	height: 24px;
+	width: 24px;
+	padding: 0;
+}
+
+.bubbles__costumers-content strong {
+	display: block;
+	padding-bottom: 0px;
+	font-weight: 700;
+}
+
+.bubbles__costumers-content p:last-child {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+@media all and (max-width: 900px) {
+	.bubbles-bgr1,
+	.bubbles-bgr2 {
+		display: none;
+	}
+
+	.bubbles__costumers-content {
+		min-width: 320px;
+		position: static;
+		text-align: center;
+	}
+
+	.bubbles {
+		background-position: center;
+		min-width: 30%;
+	}
+
+	.bubbles__costumers-wrap {
+		background-position: center;
+	}
+
+	.bubbles__content {
+		min-width: 320px;
+	}
+}
